@@ -5,13 +5,14 @@ USE `employee_directory`;
 -- Table structure for table `employee`
 --
 
-DROP TABLE IF EXISTS `employee`;
+DROP TABLE IF EXISTS `car`;
 
-CREATE TABLE `employee` (
+CREATE TABLE `car` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(45) DEFAULT NULL,
-  `last_name` varchar(45) DEFAULT NULL,
-  `email` varchar(45) DEFAULT NULL,
+  `car_name` varchar(45) DEFAULT NULL,
+  `car_model` varchar(45) DEFAULT NULL,
+  `car_color` varchar(45) DEFAULT NULL,
+  `car_imge` varchar(100) Default NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
@@ -19,10 +20,10 @@ CREATE TABLE `employee` (
 -- Data for table `employee`
 --
 
-INSERT INTO `employee` VALUES 
-	(1,'Leslie','Andrews','leslie@luv2code.com'),
-	(2,'Emma','Baumgarten','emma@luv2code.com'),
-	(3,'Avani','Gupta','avani@luv2code.com'),
-	(4,'Yuri','Petrov','yuri@luv2code.com'),
-	(5,'Juan','Vega','juan@luv2code.com');
+INSERT INTO `car` VALUES 
+	(1,'Bmw','2011','Red','/bmw.jpg'),
+	(2,'Jeep','2015','black','/jeep.jpg'),
+	(3,'kia','2017','white','kia.jpg'),
+	(4,'Toyata','2020','slever','toyota.jpg'),
+	(5,'MG','2022','yallow','mg.jpg');
 
